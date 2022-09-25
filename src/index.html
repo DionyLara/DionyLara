@@ -9,56 +9,70 @@
 
   <body>
     <nav class="navbar">
-      <h1 class="logo--studion">
-        Studi<span class="copy--primary">on</span
-        ><span class="logo--studion--subtitle">Eventos</span>
-      </h1>
-      <ul class="navbar__links">
-        <li>
-          <a href="#empresa"> empresa </a>
-        </li>
-        <li>
-          <a href="#eventos"> eventos </a>
-        </li>
-        <li><a href="#galeria"> galeria </a></li>
-        <li><a href="#eventos"> depoimentos </a></li>
-        <li>
-          <a href="#contatos"> contatos </a>
-        </li>
-      </ul>
-    </nav>
+      <div class="container navbar__container">
+        <h1 class="logo--studion">
+          Studi<span class="copy--primary">on</span
+          ><span class="logo--studion--subtitle">Eventos</span>
+        </h1>
+        <ul class="navbar__links">
+          <li>
+            <a href="#empresa"> empresa </a>
+          </li>
+          <li>
+            <a href="#eventos"> eventos </a>
+          </li>
+          <li><a href="#galeria"> galeria </a></li>
+          <li><a href="#eventos"> depoimentos </a></li>
+          <li>
+            <a href="#contatos"> contatos </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
     <header>
       <div id="slider">
         <div class="slider">
-          <img class="slide__background-image" src="../src/images/banner.jpg" alt="banner principal">
+          <img
+            class="slide__background-image"
+            src="../src/images/banner.jpg"
+            alt="banner principal"
+          />
           <div class="slide__copy">
             <h6><span>Próximo evento</span> - Dia 25 de setembro às 19h</h6>
             <h2><span>Creative</span> Minds</h2>
-            <button class="btn btn--slide">Saiba mais</button>
+            <button class="btn--slide">Saiba mais</button>
           </div>
         </div>
       </div>
     </header>
+
     <main>
-      <section>
-        <ul>
+      <section id="counter">
+        <ul class="container counter__container">
           <li>
-            <h3>+ 500</h3>
-            eventos realizados
+            <h3>
+              + 500
+              <small> eventos realizados </small>
+            </h3>
           </li>
           <li>
-            <h3>+ 1.000.000</h3>
-            de ingressos vendidos
+            <h3>
+              + 1.000.000
+              <small>de ingressos vendidos</small>
+            </h3>
           </li>
+
           <li>
-            <h3>+ 300</h3>
-            empresas atendidas
+            <h3>
+              + 300
+              <small>empresas atendidas</small>
+            </h3>
           </li>
         </ul>
       </section>
-      <section>
-        <div>
-          <img src="./images/institutional.jpg" />
+      <section class="container institucional">
+        <img src="./images/institutional.jpg" alt="studion institucional"/>
+        <div class="institucional__copy">
           <h6>fazemos o seu evento acontecer</h6>
           <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
           <p>
@@ -67,7 +81,7 @@
             nam dicta perspiciatis earum aliquam accusamus, perferendis nobis,
             ducimus incidunt assumenda.
           </p>
-          <button>saiba mais</button>
+          <button class="btn--institucional">saiba mais</button>
         </div>
       </section>
 

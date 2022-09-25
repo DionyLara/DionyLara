@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,32 +10,52 @@
   font-size: 16px;
   --color-primary: #ffc500;
   --default-padding: 1rem;
+  --color-copy: #333;
 }
 
 body {
   margin: 0;
   padding: 7.75rem 0;
+  overflow-x: hidden ;
+}
+
+body,
+header,
+main{
+  overflow-x: hidden;
+}
+
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 ul {
   display: flex;
   list-style-type: none;
   padding-left: 0;
-}
+  }
 
 .navbar {
   nav-index: 1;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar__container{
   display: grid;
   grid-template-columns: 1fr 9fr;
   align-items: center;
-  top: 0;
-  left: 0;
+  
   width: 100vw;
   height: 7.75rem;
   padding: 0 1rem;
-  background-color: #000;
-  color: #fff;
+  
 }
 
 .navbar__links {
@@ -118,7 +139,7 @@ ul {
   line-height: 6rem;
   }
 
-.btn{
+.btn--slide{
   padding: 1.25rem 2.5rem;
   border: .125px, solid, #fff;
   border-radius: 5rem;
@@ -128,15 +149,93 @@ ul {
   font-weight: 300;
   text-transform: uppercase;
   font-size: .975rem;
+  transition: 0.5s all ease;    cursor: pointer;
+
+ }
+
+ .btn--slider:hover,
+ .btn--slider:active,
+ .btn--slider:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+
+ }
+
+ #counter {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+ }
+
+ .counter__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+  padding: 6rem 1rem;
+ }
+
+ .counter__container h3{
+  font-size: 2.1875rem;
+ }
+
+ .counter__container h3 small{
+  display: block;
+  font-size: 1.25rem;
+ }
+
+ .institucional{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 6rem 1rem;
+ }
+
+ .institucional img{
+  max-width: 550px;
+ }
+
+ .institucional__copy{
+  padding: 0 1.875rem;
+ }
+
+ .institucional__copy h6{
+  font-weight: 300;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0;   
+}
+   .institucional__copy h4{
+   font-size: 1.25rem;
+}
+
+.institucional p{
+  font-size: 1.0625rem;
+  line-height: 1.8675rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+  margin-bottom: 2.5rem;
+}
+
+.btn--institucional{
+  padding: 1.25rem 2.5rem;
+  border: .125px, solid, #fff;
+  border-radius: 5rem;
+  border-color: var(--color-primary);
+  color: #fff;
+  background: var(--color-primary);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .975rem;
   transition: 0.5s all ease;
+  cursor: pointer;
  }
 
  .btn:hover,
  .btn:active,
  .btn:focus {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary);
-    color: #fff;
-    cursor: pointer;
+    background-color: #fff;
+    color: var(--color-primary);
+}
 
- }
